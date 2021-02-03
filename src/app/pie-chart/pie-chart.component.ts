@@ -43,6 +43,9 @@ export class PieChartComponent implements OnInit {
 
   }
 
+  getToday(): string {
+    return new Date().toISOString().split('T')[0]
+  }
 
     submit(){
       console.log("this.hardwareRequest ",this.hardwareRequest.value.createDate);
