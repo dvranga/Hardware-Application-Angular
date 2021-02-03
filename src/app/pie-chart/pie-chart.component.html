@@ -1,0 +1,18 @@
+<div [formGroup]="hardwareRequest" class="date-container" (ngSubmit)="submit()">
+    <h2>Date Selector</h2>
+    <div class="from"><h4 class="from-title">From</h4><input  type="date" id="myDate" formControlName="createDate" value="2000-05-05" required></div>
+    <div class="to"><h4 class="to-title">To</h4><input class="todate" type="date" id="myDate" value="2000-05-05" formControlName="modifiedDate" required></div>
+</div>
+<input type="button" (click)="submit()" class="button" value="Select">
+<div class="chartjs-container">
+    <canvas 
+        baseChart 
+        [data]="pieChartData" 
+        [labels]="pieChartLabels" 
+        [chartType]="pieChartType"
+        [options]="pieChartOptions" 
+        [plugins]="pieChartPlugins" 
+        [colors]="pieChartColors" 
+        [legend]="pieChartLegend">
+    </canvas>
+</div>
