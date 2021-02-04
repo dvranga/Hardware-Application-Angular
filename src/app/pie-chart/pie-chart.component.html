@@ -1,4 +1,4 @@
-<div [formGroup]="hardwareRequest" class="date-container" (ngSubmit)="submit()">
+<div style="margin-top: 50px;" [formGroup]="hardwareRequest" class="date-container" (ngSubmit)="submit()">
     <h2>Date Selector</h2>
     <div class="from"><h4 class="from-title">From</h4><input  type="date"  id="myDate" formControlName="createDate" value="2000-05-05"
         min="2021-01-31" [max]="getToday()" required></div>

@@ -1,0 +1,29 @@
+.page-header {
+  background-color: #36394b;
+  width: 100%;
+  height: 50px;
+  font-size: medium;
+  // padding: 1px;
+  margin: 0px;
+  margin-top: -750px;
+}
+.page-header a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+.page-header .user-link {
+  border: 0px solid #fff;
+  border-radius: 100px;
+  float: right;
+  margin-left: 1000px;
+  margin-right: 20px;
+
+  cursor: pointer;
+}
+.page-header .user-link:hover {
+  background-color: #31333b;
+}
